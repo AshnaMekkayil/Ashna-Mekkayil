@@ -3,7 +3,7 @@
 This repository contains an end-to-end (E2E) test automation framework for the Monefy Android app:
 - https://play.google.com/store/apps/details?id=com.monefy.app.lite
 
-## ✅ Covered E2E User Flows (3 most important)
+## Covered E2E User Flows (3 most important)
 Based on exploratory testing, the chosen critical user flows are:
 
 1) **Add Income**
@@ -77,3 +77,13 @@ From repo root:
 ### Run all tests
 ```bash
 ./gradlew cleanTest test --rerun-tasks
+
+##Approach Summary
+
+Chosen flows prioritize user-critical actions: adding income/expense and verifying main screen integrity.
+
+Assertions use visible totals (income/expense/balance) to validate behavior in a stable and user-focused way.
+
+Page Object Model is used for maintainability and easier selector updates.
+
+Tests are designed to be fast, repeatable, and less flaky (avoiding deletion due to UI variability).
