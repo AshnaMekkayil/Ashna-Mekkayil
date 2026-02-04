@@ -1,0 +1,14 @@
+﻿# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+
+# Gradle / Kotlin
+.gradle/
+**/build/
+
+# Android local
+local.properties
+
+# Reports copy folder is OK to commit

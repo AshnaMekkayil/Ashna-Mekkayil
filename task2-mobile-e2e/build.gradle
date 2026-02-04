@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.appium:java-client:9.2.2'
+    testImplementation 'org.testng:testng:7.10.2'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.22.0'
+}
+
+test {
+    useTestNG()
+    testLogging {
+        events "passed", "failed", "skipped"
+    }
+}
